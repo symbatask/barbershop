@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1560px;
+    padding: 0 15px;
+}
+.header-menu-item{
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 26px 0;
+    margin-right: 46px;
+
+}
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 78px;
+}
+.hero-wrapper{
+
+    background: url("../image/fon.png") no-repeat center/cover;
+
+    padding: 10px;
+
+}
+.row{
+    display: flex;
+    margin:0 -10px;
+   flex-wrap: wrap;
+}
+.col-4{
+    width: 33.333%;
+    margin:0 10px;
+}
+.svg{
+
+    padding: 10px 0 25px;
+}
+.title{
+
+}
+.inner{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.column-wrapper{
+text-align: center;
+    color: #FFFFFF;
+}
+.col-6{
+    width: 50%;
+}
+.box-wrapper{
+    background-color: #FFFFFF;
+    padding: 47px 80px;
+}
+.info{
+    padding-top: 23px;
+}
+.data{
+    padding-top: 10px;
+}
+.btn{
+
+    width: 140px;
+    height: 44px;
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

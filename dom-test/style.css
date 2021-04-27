@@ -1,0 +1,22 @@
+.container{
+    margin: 0 auto;
+    max-width: 778px;
+
+
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+   border: 2px solid black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+
+}
+.input{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

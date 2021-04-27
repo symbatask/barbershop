@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_wrapper{
+    background-color: green;
+    min-height: 100vh;
+
+   display: flex;
+}
+.login_form{
+    width: 400px;
+    margin: auto;
+    padding: 40px;
+
+    background-color: white;
+}
+.login_input{
+    height: 40px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color:#d3d3d3;
+    border:none;
+    padding-left: 15px;
+}
+
+.create_account{
+    color: grey;
+}
+.create_account a{
+    color: green;
+}
+.btn{
+width: 100%;
+    border:none;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+}
+.login-inner{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+}
+.login-inner:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+.login-in{
+    display: none;
+
+}

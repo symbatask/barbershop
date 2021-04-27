@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?t5ydmy');
+    src:  url('fonts/icomoon.eot?t5ydmy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t5ydmy') format('truetype'),
+    url('fonts/icomoon.woff?t5ydmy') format('woff'),
+    url('fonts/icomoon.svg?t5ydmy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-guitar .path1:before {
+    content: "\e903";
+    color: rgb(255, 242, 160);
+}
+.icon-guitar .path2:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(255, 234, 96);
+}
+.icon-guitar .path3:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(255, 156, 155);
+}
+.icon-guitar .path4:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(160, 200, 255);
+}
+.icon-guitar .path5:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+.icon-guitar .path6:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+.icon-guitar .path7:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+.icon-Shape-1:before {
+    content: "\e901";
+    color: #fff;
+}
+.icon-Shape-2:before {
+    content: "\e902";
+    color: #fff;
+}
+.icon-youtube:before {
+    content: "\e900";
+    color: #fff;
+}

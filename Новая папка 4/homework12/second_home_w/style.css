@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+
+}
+.header {
+    border: 1px solid #000000;
+
+}
+.title {
+    font-size: 32px;
+    line-height: 37px;
+    padding-left: 50px;
+    font-weight: 500;
+
+
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 122px;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.find {
+    width: 135px;
+    height: 46px;
+    background: #000000;
+    text-align: center;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.search_box {
+    width: 366px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.search {
+    display: flex;
+}
+.main_title{
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    color: #000000;
+    padding: 40px 50px 0 61px;
+}
+.small_title{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding:0 0 10px 55px;
+}
+.info img{
+    padding-left: 55px;
+}
+.small_header{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding:20px 0 10px 55px;
+}
+.inner{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding:0 500px 10px 50px;
+}
+.content{
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding: 9px 300px 49px 50px;
+}
+.caption{
+    padding: 0 50px 0 61px;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    color: #000000;
+}
+.images{
+    display: flex;
+    padding: 0 50px 0 61px;
+}
+.tiny_cap{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding:10px 0 26px 58px;
+}
+.petr_name{
+    padding:72px 0 0 171px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: black;}
+.petr_contact{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #146EF5;
+}
+
+
+
+

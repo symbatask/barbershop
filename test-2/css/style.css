@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header{
+position: absolute;
+left: 140px;
+}
+
+
+.hero{
+height: 545px;
+    background: #EEEEEE;
+    width: 100%;
+}
+.header-wrapper{
+    width: 100%;
+    display:flex;
+
+    align-items: center;
+
+}
+.header-nav{
+    margin-left: 50px;
+}
+.header-nav-item{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-left: 45px;
+}
+.header-nav-trash{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+
+}
+.trash{
+    margin-left: 260px;
+}
+
+.hero-wrapper{
+    width: 100%;
+    display: flex;
+
+}
+.hero-inner{
+    margin-top: 192px;
+}
+.hero-img{
+
+    object-fit: contain;
+    margin-top: 114px;
+
+}
+.title{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    
+
+}
+.hero-p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    padding: 25px 0 38px 0;
+
+}
+.btn{
+    width: 240px;
+    height: 50px;
+    background: #FB565A;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+
+}
+.row{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px
+}
+.title-columns{
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 25px 0 16px 0;
+
+}
+.columns-p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+
+}
+.button{
+    width: 160px;
+    height: 50px;
+    left: 140px;
+    top: 922px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 49px;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.red{
+    background: #FB565A;
+}
+.green{
+    background: #00CA74;
+}
+.yellow{
+    background: #EFC849;
+}

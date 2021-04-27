@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    padding: 50px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}

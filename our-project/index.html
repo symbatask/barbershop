@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<canvas id="canvas" height="600" width="600"></canvas>
+<div class="header">
+
+
+    <video id="video" src="./video/v.mp4" class="video" playsinline="true" autoplay="true" loop="true" muted="true">
+        https://https://www.youtube.com/watch?v=w_T-j7jXf6g&list=PLZg8DL3emoAKLsQuxuXehSeqj1UGqkpcF
+
+    </video>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Prise list</a>
+    <a href="#">Contact</a>
+
+    <button class="logo">
+        Color Cross
+    </button>
+</div>
+<canvas width="449" height="602" id="colors"></canvas>
+
+<script src="./script.js"></script>
+<div class="c-compare" style="--value:50%;">
+    <img class="c-compare__left" src="https://assets.stoumann.dk/img/color.jpg" alt="Color" />
+    <img class="c-compare__right" src="https://assets.stoumann.dk/img/bw.jpg" alt="B/W" />
+    <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+</div>
+&copy; Photo by Karley Saagi from Pexels
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 import React from 'react';
 import TextField from "./TextField";
 import * as Yup from "yup";
-import {Formik} from "formik";
+import {Formik, Form} from "formik";
 
-const Form = () => {
+const FormStudent = ({setIsShown, setInfos, infos}) => {
     const validate = Yup.object({
             firstName: Yup.string()
                 .max(15, "Must be 15 characters or less")
@@ -26,12 +26,35 @@ const Form = () => {
                 phone: "",
                 contract: "",
                 paid: "",
-                laptop: ""
+                laptop: "",
+                comments: "",
+                gender: "",
+                group: "",
+                status: "",
             }}
             validationSchema={validate}
+            onSubmit={values => {
+                let newStudent = {
+                    comments: values.comments,
+                    contract_amount: values.contract_amount,
+                    gender: values.gender,
+                    group: values.group,
+                    laptop: values.laptop,
+                    name: values.firstName,
+                    phone_number: values.phone,
+                    prepay: values.paid,
+                    status: values.active,
+                    updatedAt: "2021-04-26T04:58:12.161Z",
+                    __v: 0,
+                    _id: Math.random().toString().slice(1, 3)
+                }
+                setInfos([...infos, newStudent])
+                setIsShown(false)
+            }}
         >
+
             {formik => (
-                <Form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+                <Form className="bg-white shadow-md rounded px-8 pt-6 pb-8 my-4 flex flex-col absolute top-0 left-96 ">
                     <div className="-mx-3 md:flex mb-6">
                         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                             <TextField label="Введите имя" name="firstName" type="text"/>
@@ -42,23 +65,22 @@ const Form = () => {
                     </div>
                     <div className="-mx-3 md:flex mb-6">
                         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-                            <TextField label="Сумма контракта" name="contract" type="text"/>
+                            <TextField label="Сумма контракта" name="contract" type="number"/>
                         </div>
                         <div className="md:w-1/2 px-3">
-                            <TextField label="Оплатил" name="paid" type="text"/>
+                            <TextField label="Оплатил" name="paid" type="number"/>
                         </div>
                     </div>
                     <div className="-mx-3 md:flex mb-6">
                         <div className="md:w-full px-3">
                             <TextField label="Ноутбук" name="laptop" type="text"/>
-
                         </div>
                     </div>
                     <div className="-mx-3 md:flex mb-2">
                         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                             <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                    htmlFor="grid-city">
-                                City
+                                Группа
                             </label>
                             <select x-cloak id="select"
                                     className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4">
@@ -67,14 +89,11 @@ const Form = () => {
                                 <option value="Дневная">Дневная</option>
                                 <option value="Вечерняя">Вечерняя</option>
                             </select>
-                            <input
-                                className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
-                                id="grid-city" type="text" placeholder="Albuquerque"/>
                         </div>
                         <div className="md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                    htmlFor="grid-state">
-                                State
+                                Статус
                             </label>
                             <div className="relative">
                                 <select
@@ -85,19 +104,12 @@ const Form = () => {
                                     <option value="Открыт">Открыт</option>
 
                                 </select>
-                                <div
-                                    className="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-                                    <svg className="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                                    </svg>
-                                </div>
                             </div>
                         </div>
                         <div className="md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                    htmlFor="grid-zip">
-                                Zip
+                                Пол
                             </label>
                             <select
                                 className="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
@@ -108,14 +120,30 @@ const Form = () => {
                             </select>
                         </div>
                     </div>
+                    <div className="-mx-3 md:flex mb-6">
+                        <div className="md:w-full px-3">
+                            <TextField label="Введите комментарий" name="comments" type="text"/>
+                        </div>
+                    </div>
                     <div className="flex justify-end">
-                        <button className="mt-3  w-24 bg-black text-white px-3 py-2 rounded-md" type="submit">Register</button>
-                        <button className="mt-3 ml-3 w-24 bg-gray-700 text-white px-3 py-2 rounded-md" type="reset">Reset</button>
+                        <button className="mt-3  w-24 bg-gray-500 text-white px-3 py-2 rounded-md mr-3" type="submit"
+                                onClick={() => setIsShown(false)}
+                        >Clear
+                        </button>
+                        <button className="mt-3  w-24 bg-black text-white px-3 py-2 rounded-md" type="submit"
+
+                        >Register
+                        </button>
+                        <button className="mt-3 ml-3 w-24 bg-gray-700 text-white px-3 py-2 rounded-md"
+                                type="reset">Reset
+                        </button>
                     </div>
                 </Form>
 
             )}
-        </Formik>)
+        </Formik>
+
+    )
 };
 
-export default Form;
+export default FormStudent;
